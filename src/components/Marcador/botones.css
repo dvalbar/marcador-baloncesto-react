@@ -1,0 +1,21 @@
+/* Crea botones.css con una clase .boton (padding, borde redondeado, cursor: pointer) e 
+impórtalo en Marcador.jsx. Añade en cada equipo tres botones+1, +2 y+3 con esa clase.*/
+
+/* .boton {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+} */
+
+.boton {
+    padding: 0.5rem 0.9rem;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background-color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #e2e8f0;
+}

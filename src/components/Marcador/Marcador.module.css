@@ -1,0 +1,101 @@
+/* ==========================================
+   CONTENEDOR PRINCIPAL DEL MARCADOR
+   ========================================== */
+.marcador {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+/* ==========================================
+   TARJETAS DE CADA EQUIPO
+   ========================================== */
+.equipo {
+    border: 2px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+    transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.local {
+    border-color: var(--color-local);
+}
+
+.visitante {
+    border-color: var(--color-visitante);
+}
+
+/* ==========================================
+   TIPOGRAFÍA Y PUNTOS
+   ========================================== */
+.nombreEquipo {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #1e293b;
+}
+
+.puntos {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1;
+    margin: 0.25rem 0;
+    color: #0f172a;
+    font-variant-numeric: tabular-nums;
+}
+
+/* ==========================================
+   BOTONERA Y FALTAS
+   ========================================== */
+.acciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.faltas {
+    margin: auto 0 0 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #475569;
+}
+
+/* ==========================================
+   PANEL INFERIOR (DIFERENCIA Y CONTROLES)
+   ========================================== */
+.panelInferior {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
+    margin-top: 0.25rem;
+    padding: 1.1rem;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+}
+
+.diferencia {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.controlesPartido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
